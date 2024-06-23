@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    /* width:1000px; */
+    margin: 0 auto;
+}
+/* logo và câu slogen */
+header{
+    height: 50px;
+    background: linear-gradient(90deg,#d4d4d4,#1d202c);
+}
+.contener{
+    position: relative;
+}
+.intro{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(6, 6, 6);
+    margin: 13px 0px 0px 55px;
+}
+/* phần đăng nhập và đăng kí */
+.contener ul{
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+    display: flex;
+}
+.contener ul li{
+    list-style: none;
+    margin: auto 15px;
+}
+.contener ul li >a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: unset;
+    position: relative;
+    display: block;
+}
+.contener ul li >a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    display: block;
+    transition: width.5s;
+}
+.contener ul li >a:hover:after{
+    width: 100%;
+}
+.contener .cart{
+    position: absolute;
+    font-size: 50px;
+    margin-top: 75px;
+    margin-left: 50px;
+    color: #000;
+}
+/* 2 ảnh phần nav */
+.contener .picture{
+    box-sizing: border-box;
+}
+.contener .picture .pic1{
+    width: 250px;
+    height: auto;
+    margin-top: 83px;
+    margin-left: 111px;
+}
+.contener .fa-sharp {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    margin-top: 300px;
+}
+.contener .picture .pic2{
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1000px;
+    height: auto;
+    margin-top: -303px;
+    margin-left: 500px;
+}
+/* .contener .picture i{
+    color: black;
+    height: auto;
+    width: 100px;
+
+} */
+/*  thanh menu */
+nav{
+    background: #a2b4fe;
+    margin-top: 301px;
+    height: 60px;
+}
+nav ul{
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 140px;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-decoration: unset;
+    display: block;
+}
+nav ul li >a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: rgb(9, 9, 9);
+    display: block;
+    transition: width.5s;
+}
+nav ul li >a:hover:after{
+    width: 100%;
+}
+/* thanh tìm kiếm phần nav */
+nav .seatch{
+    float: right;
+    position: relative;
+    margin-top: 15px;
+    margin-right: 120px;
+}
+nav .seatch .form{
+    width: 300px;
+    height: 30px;
+    background-color: #a2b4fe;
+}
+nav .seatch .label{
+    position: absolute;
+    left: 0px;
+    padding: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #010101;
+    user-select: none;
+    pointer-events: none;
+}
+nav .seatch .form:not(:placeholder-shown) +
+.label,
+nav .seatch .form:focus + .label{
+    top: 0px;
+    background-color: #a2b4fe;
+    color: #000000;
+    padding: 0 15px;
+    left: 6px;
+    transition: 0.5s;
+}
+/* css phần lựa chọn của khách hàng */
+.products-item{
+    background-color: #ffffff;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.sitebar{
+    box-sizing: border-box;
+    width: 300px;
+    height: 380px;
+    font-size: 20px;
+    border-radius: 0.5em;
+    margin-top: 10px;
+    box-shadow:  0 0 1em rgba(0,0,0,0.8);
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    line-height: 3em;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sitebar li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+}
+.sitebar li{
+    margin: 10px 0;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.sitebar li:nth-child(odd){
+    background: linear-gradient(to right,orange,tomato);
+    text-align: left;
+    padding-left: 10%;
+    transform: perspective(400px) rotateY(45deg) ;
+}
+.sitebar li:nth-child(even){
+    background: linear-gradient(to left,orange,tomato);
+    text-align:  right;
+    padding-right: 10%;
+    transform: perspective(400px) rotateY(-45deg);
+}
+.sitebar li:nth-child(odd):hover{
+    transform: perspective(250px) rotateY(25deg);
+    padding-left: 5%;
+}
+.sitebar li:nth-child(even):hover{
+    transform: perspective(250px) rotateY(-25deg);
+    padding-right: 5%;
+}
+.vecto{
+    height: 450px;
+    width: 3px;
+    background-color: #000000;
+    margin-left: 309px;
+    margin-top: -380px;
+}
+/* css phần sản phẩm */
+.sanpham{
+    margin-top: -488px;
+}
+.production{
+    position: relative;
+    margin: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #ffffff;
+    width: 300px;
+    height: 70vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -407px;
+    margin-left: 460px;
+}
+.production2{
+    position: absolute;
+    margin: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #ffffff;
+    width: 300px;
+    height: 70vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -522px;
+    margin-left: 1068px;
+}
+p{
+    margin: 0px;
+}
+.card{
+    display: flex;
+    height: 500px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.card-img{
+    width: 300px;
+    height: auto;
+}
+.card-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.card-content{
+    width: 300px;
+    background: #fff;
+    padding: 2.5rem 1.7em;
+}
+.card-content-tag{
+    display: flex;
+    gap: 1rem;
+}
+.card-content-tag span{
+    background: #E9E9E9;
+    font-size: 0.75rem;
+    border-radius: 8px;
+    padding: 0.15rem 0.25rem;
+}
+.card-content-title{
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-content-info{
+    margin-top: 30px;
+    margin-right: -10px;
+    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #333;
+}
+.card-content-config{
+    margin-top:37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-content-config .prev-price{
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    font-weight: 700;
+    margin-left: 0.25rem;
+    color: #dc2626;
+}
+.card-content-config .colors{
+    /* margin-top: 300px; */
+    display: flex;
+    gap: 0.5rem;
+}
+.card-content-config .colors .color{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 2px;
+    display: inline-block;
+}
+
+.colors .color1{background: #23232323;}
+.colors .color2{background: #fb923c;}
+.colors .color3{background: #ef4444;}
+
+.card-content-action{
+    margin-top: 40px;
+    display: flex;
+    gap: 0.5rem;
+}
+/* hover vào nút add vô vỏ hàng */
+.card-content-action:nth-child(odd){
+text-align: left;
+padding-left: 10%;
+transform: perspective(400px) rotate(0deg) ;
+}
+.card-content-action:nth-child(even){
+text-align:  right;
+padding-right: 10%;
+transform: perspective(400px) rotate(0deg);
+}
+.card-content-action:nth-child(odd):hover{
+    transform: perspective(250px) rotate(2deg);
+    padding-left: 5%;
+}
+.card-content-action:nth-child(even):hover{
+    transform: perspective(250px) rotate(2deg);
+    padding-right: 5%;
+}
+/* ------------------------------------------- */
+.card-content-action button{
+    all: unset;
+    background: #232343;
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* css phần footer */
+.item{
+    height: 100px;
+    background:linear-gradient(90deg,#bf03ee,#00ff37);
+    border-radius: 10px;
+}
+.footer p {
+    margin-top: auto;
+    margin-left: 100px;
+    font-family: sans-serif;
+    font-variant:unset;
+    font-size: 20px;
+    color: aliceblue;
+}
+

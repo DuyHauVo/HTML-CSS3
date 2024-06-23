@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 50px;
+    background: linear-gradient(90deg,#ffffff,#ff0000)
+}
+.contener{
+    position: relative;
+}
+p{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(6, 6, 6);
+    margin: 15px 0px 0px 55px;
+}
+/* phần đăng nhập và đăng kí */
+.contener ul{
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+    display: flex;
+}
+.contener ul li{
+    list-style: none;
+    margin: auto 30px;
+}
+.contener ul li >a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(12, 9, 9);
+    text-decoration: unset;
+    position: relative;
+    display: block;
+}
+.contener ul li >a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: rgb(9, 9, 9);
+    display: block;
+    transition: width.5s;
+}
+.contener ul li >a:hover:after{
+    width: 100%;
+}
+/* css phần đăng nhập */
+body{
+    background: url(/ảnh/background.jpg);
+    background-position-x:center;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.form-login{
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    flex-grow: 1;
+    padding: 30px 40px 30px;
+    box-shadow: 0px 0px 25px 2px rgba(255, 0, 0, 0.8);
+}
+.form-heading{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-group{
+    border-bottom: 2px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    position: relative;
+}
+.form-group .eye-icon{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+.form-input{
+    background:transparent;
+    padding: 10px 0px;
+    border: 0;
+    outline: 0;
+    color: #f5f5f5;
+}
+.form-input::placeholder{
+    color: #ff0000;
+}
+#input-submit{
+    background: transparent;
+    color: white;
+    border: 1px solid #f5f5f5;
+    width: 100%;
+    text-transform: uppercase; 
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+#input-submit:hover{
+    border: 2px solid #b43a3a;
+}
+.form-link{
+    text-align: center;
+}
+.forgot-pass{
+    text-decoration: none;
+    font-weight: 200;
+    color: #ff0000;
+    font-size: 20;
+}
+.form-link2 span{
+    color: #fff;
+    font-size: 25;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.form-link a:hover{
+    text-decoration: underline;
+    color: #962a2a;
+}
+.form-link2{
+    text-align: center;
+    margin-top: 20px;
+}
+.form-link2 a{
+    text-decoration: none;
+    font-size: 25;
+    font-weight: 300;
+    color: #fff;
+}
+.form-link2 a:hover{
+    border-bottom: 1px solid #fff;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    position: relative;
+    background-color: #818181;
+    margin: 35px 0;
+}
+.line::before{
+    content: "Or";
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: rgba(40, 38, 38, 0.8);
+    color: rgb(254, 254, 254) ;
+    padding: 0 10px;
+}
+/* Đăng nhập bằng fb */
+.facebook{
+    display: flex;
+    background-color: #3B5998;
+    height: 30px;
+    border-radius: 20px;
+}
+a.font-fb{
+    color: #fff;
+    background-color: #3B5998;
+    margin: auto;
+}
+a .facebook-icon{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 80px;
+}
+.facebook span{
+    margin-top: 6px;
+    margin-right: 100px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.facebook a+span:hover{
+    color: #ff0000;
+}
+/* Đăng nhập bằng gmail */
+.gmail{
+    margin-top: 30px;
+    display: flex;
+    background-color: #ffffff;
+    height: 30px;
+    border-radius: 20px;
+}
+.gmail a+span:hover{
+    color: #ff0000;
+}
+a.font-gm{
+    color: #fff;
+    background-color: #ffffff;
+    margin: auto;
+}
+.gmail img{
+    margin-left: 80px;
+}
+a .gmail-icon{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 80px;
+}
+.gmail span{
+    margin-top: 5px;
+    margin-right: 120px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+/* css phần footter */
+.item{
+    position: relative;
+    height: 100px;
+    background:linear-gradient(90deg,#bf03ee,#00ff37);
+    border-radius: 10px;
+}
+.footer p {
+    margin-top: auto;
+    margin-left: 100px;
+    font-family: sans-serif;
+    font-variant:unset;
+    font-size: 20px;
+    color: aliceblue;
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 50px;
+    background: linear-gradient(90deg,#1eff00,#00ddff)
+}
+.contener{
+    position: relative;
+}
+.contener p{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(6, 6, 6);
+    margin: 15px 0px 0px 55px;
+}
+/* phần đăng nhập và đăng kí */
+.contener ul{
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+    display: flex;
+}
+.contener ul li{
+    list-style: none;
+    margin: auto 30px;
+}
+.contener ul li >a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(12, 9, 9);
+    text-decoration: unset;
+    position: relative;
+    display: block;
+}
+.contener ul li >a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: rgb(9, 9, 9);
+    display: block;
+    transition: width.5s;
+}
+.contener ul li >a:hover:after{
+    width: 100%;
+}
+/* css phần giỏ hàng  */
+.left h1{
+    margin-top: 100px;
+    margin-left: 320px;
+    font-weight: 600px;
+    font-family: 'Oswald', sans-serif;
+}
+.line{
+    height: 1px;
+    width: 700px;
+    background-color: rgb(89, 89, 89);
+    margin-left: 320px;
+}
+.content-intro{
+    margin-top: 130px ;
+    margin-left: 485px;
+    font-family: 'Tilt Prism', cursive;
+}
+.content-title{
+    margin-top: 6px;
+    margin-left: 390px;
+    font-family: 'Tilt Prism', cursive;
+}
+.right{ 
+    position: relative;
+    float: right;
+    margin-top: -230px;
+    margin-right: 200px;
+    font-family: 'Tilt Prism', cursive;
+}
+.continue-cart{
+    position: absolute;
+    text-decoration: none;
+    text-align: justify;
+    font-size: 10px;
+    color: gray;
+    margin-top: -220px;
+    margin-right: 50px;
+}
+.continue-cart:hover{
+    color: red;
+}
+.information-first{
+    margin-top: -200px;
+    margin-left: -50px;
+    margin-right: 80px;
+    background-color: rgba(125, 125, 124,0.8);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.price {
+    margin-top: 50px;
+    font-weight: 600;
+    margin-left: -100px;
+    font-family:'Tilt Prism', cursive ;
+}
+.price span{
+    margin-left: 100px;
+    right: 1px;
+}
+.information-secont{
+    position: relative;
+}
+.information-price1{
+    position: absolute;
+    margin-right: 10px;
+    margin-top: -20px;
+}
+.information-secont2{
+    position: relative;
+    margin-top: 30px;
+    font-family:'Tilt Prism', cursive ;
+}
+.information-price2{
+    position: absolute;
+    margin-right: 10px;
+    margin-top: -20px;
+}
+.button{
+    text-align: center;
+    margin-top: 200px;
+    margin-right: 200px;
+    background: transparent;
+    
+}

@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 50px;
+    background: linear-gradient(90deg,#ff0000,#ffffff)
+}
+.contener{
+    position: relative;
+}
+p{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(6, 6, 6);
+    margin: 15px 0px 0px 55px;
+}
+/* phần đăng nhập và đăng kí ở header */
+.contener ul{
+    float: right;
+    margin-top: 15px;
+    margin-right: 70px;
+    display: flex;
+}
+.contener ul li{
+    list-style: none;
+    margin: auto 30px;
+}
+.contener ul li >a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(12, 9, 9);
+    text-decoration: unset;
+    position: relative;
+    display: block;
+}
+.contener ul li >a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: rgb(9, 9, 9);
+    display: block;
+    transition: width.5s;
+}
+.contener ul li >a:hover:after{
+    width: 100%;
+}
+/* css phần đăng kí */
+body{
+    background: url(/ảnh/background.jpg);
+    background-position-x:center;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.form-signin{
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    flex-grow: 1;
+    padding: 30px 40px 30px;
+    box-shadow: 0px 0px 25px 2px rgba(255, 0, 0, 0.8);
+}
+.form-heading-signin{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    color: rgb(16, 15, 15);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form-group-signin{
+    border-bottom: 2px solid #141111;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    position: relative;
+}
+.form-input{
+    background:transparent;
+    padding: 10px 0px;
+    border: 0;
+    outline: 0;
+    color: #050505;
+}
+.form-input::placeholder{
+    color: #ff0000;
+}
+#input-submit{
+    background: transparent;
+    color: rgb(8, 8, 8);
+    border: 1px solid #000000;
+    width: 100%;
+    text-transform: uppercase; 
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+#input-submit:hover{
+    border: 2px solid #b43a3a;
+}
+.form-link{
+    text-align: center;
+}
+.forgot-pass{
+    text-decoration: none;
+    font-weight: 200;
+    color: #ff0000;
+    font-size: 20;
+}
+.form-link a:hover{
+    text-decoration: underline;
+    color: #962a2a;
+}
+/* css phần footter */
+.item{
+    position: relative;
+    height: 100px;
+    background:linear-gradient(90deg,#bf03ee,#00ff37);
+    border-radius: 10px;
+}
+.footer p {
+    margin-top: auto;
+    margin-left: 100px;
+    font-family: sans-serif;
+    font-variant:unset;
+    font-size: 20px;
+    color: aliceblue;
+}
